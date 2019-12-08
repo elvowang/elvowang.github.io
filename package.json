@@ -1,0 +1,17 @@
+{
+  "name": "elvowang.github.io",
+  "description": "Elvo Website",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Elvo",
+    "Website"
+  ],
+  "author": "elvo_wang",
+  "homepage": "https://elvowang.github.io",
+  "dependencies": {
+    "webpack": "^4.41.2"
+  }
+}
