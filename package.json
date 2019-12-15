@@ -3,7 +3,9 @@
   "description": "Elvo Website",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build && next export && bash ./script.sh",
+    "start": "next start"
   },
   "keywords": [
     "Elvo",
@@ -12,6 +14,10 @@
   "author": "elvo_wang",
   "homepage": "https://elvowang.github.io",
   "dependencies": {
+    "next": "^9.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1",
     "webpack": "^4.41.2"
   }
 }
