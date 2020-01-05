@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export && bash ./script.sh",
+    "build": "bash ./script.sh",
     "start": "next start"
   },
   "keywords": [
