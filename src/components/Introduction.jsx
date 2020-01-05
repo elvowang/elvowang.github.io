@@ -9,6 +9,14 @@ const StyledAvatar = styled.div`
     width: 200px;
     border-radius: 50%;
     display: inline-block;
+
+    & > img {
+        display: block;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: solid 1px ${({ theme }) => theme.colors.inactive};
+    }
 `;
 
 const StyledInfoContrainer = styled.div`
@@ -19,7 +27,7 @@ const StyledInfoContrainer = styled.div`
     padding: ${({ theme }) => theme.paddings.large};
     position: relative;
 
-    & > div {
+    & > div:first-child {
         font-size: ${({ theme }) => theme.sizes.medium};
     }
 `;
@@ -27,6 +35,7 @@ const StyledInfoContrainer = styled.div`
 const StyledIntro = styled.div`
     margin: ${({ theme }) => theme.paddings.medium} 0;
     padding: ${({ theme }) => theme.paddings.medium} 0;
+    padding-right: 90px;
     border-top: solid 1px ${({ theme }) => theme.colors.inactive};
 `;
 
@@ -58,13 +67,13 @@ const renderLink = ({ source, link }, index) => {
     }
 
     style = {
-        background: `url(spritesheet.png) -5px -${index * 40 + 5}px`,
+        background: `url(data/spritesheet.png) -5px -${index * 40 + 5}px`,
         width: '30px',
         height: '30px',
     };
 
     return (
-        <StyledLink href={href} target={target}>
+        <StyledLink href={href} target={target} key={source}>
             <div style={style}>{' '}</div>
         </StyledLink>
     );
@@ -73,7 +82,7 @@ const renderLink = ({ source, link }, index) => {
 const Introduction = () => (
     <div>
         <StyledAvatar>
-            {profile.avatar || 'W'}
+            {profile.avatar ? (<img src={profile.avatar} />) : 'W'}
         </StyledAvatar>
         <StyledInfoContrainer>
             <div>{profile.name}</div>

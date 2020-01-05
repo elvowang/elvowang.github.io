@@ -8,5 +8,6 @@ export default createGlobalStyle`
 
     html, body {
         width: 100%;
+        font-size: ${({ theme }) => theme.sizes.small};
     }
 `;

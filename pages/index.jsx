@@ -2,6 +2,7 @@ import Head from 'next/head';
 import GlobalStyle from '../src/components/GlobalStyle';
 import Container, { Banner, Content } from '../src/components/Container';
 import Introduction from '../src/components/Introduction';
+import Projects from '../src/components/Projects';
 import profile from '../src/data/profile';
 
 const IndexPage = () => {
@@ -18,6 +19,7 @@ const IndexPage = () => {
                 <Banner />
                 <Content>
                     <Introduction />
+                    <Projects />
                 </Content>
             </>
         </Container>
