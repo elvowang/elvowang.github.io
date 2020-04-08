@@ -1,0 +1,12 @@
+{
+    "portfolio": [
+        {
+            "time": "2019-10-01",
+            "title": "Telemactics One App",
+            "description": "A product faces to car owners at presales and aftersales periods.",
+            "cover": "/data/image_telemactics.jpg"
+        }
+    ],
+    "journey": [],
+    "story": []
+}

@@ -12,24 +12,4 @@ const Container = (props) => (
     </StyledContainer>
 );
 
-const StyledBanner = styled.div`
-    background: ${({ theme }) => theme.colors.inactive};
-    height: 200px;
-`;
-
-export const Banner = () => (
-    <StyledBanner />
-);
-
-const StyledContent = styled.div`
-    padding: ${({ theme }) => theme.paddings.large};
-    max-width: 1024px;
-    margin: auto;
-    text-align: left;
-`;
-
-export const Content = (props) => (
-    <StyledContent>{props.children}</StyledContent>
-);
-
 export default Container;
